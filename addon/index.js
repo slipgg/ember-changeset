@@ -40,7 +40,7 @@ function defaultValidatorFn() {
   return true;
 }
 
-const defaultOptions = { skipValidate: false };
+const defaultOptions = { skipValidate: true };
 
 /**
  * Creates new changesets.
