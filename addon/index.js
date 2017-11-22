@@ -360,6 +360,10 @@ export function changeset(obj, validateFn = defaultValidatorFn, validationMap = 
       return set(errors, key, { value, validation });
     },
 
+    removeErrors(key) {
+      this._deleteKey(ERRORS, key);
+    },
+
     /**
      * Creates a snapshot of the changeset's errors and changes.
      *
